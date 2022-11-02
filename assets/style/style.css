@@ -1,0 +1,115 @@
+@import "./fonts.css";
+
+:root {}
+
+/* BASE CONFIG */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+/* BASE CONFIG */
+/* UNIQUE */
+.container {
+  max-width: 1340px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* UNIQUE */
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://wallpaperaccess.com/full/302312.jpg') no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  animation: animate 25s linear infinite;
+}
+
+
+.hero__title {
+  font-size: 40px;
+  color: rgb(255, 170, 0);
+}
+
+.hero__sm-title {
+  color: rgb(254, 254, 254);
+}
+
+/* HERO */
+/* CARDS */
+.cards {
+  padding: 50px 0;
+}
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 35px;
+  row-gap: 40px;
+  height: 500px;
+  width: 100%;
+}
+.cards__card:hover {
+  transition: 0.3s;
+  transform: translate(-20px, 20px);
+}
+.cards__card_1 {
+  background: url('https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png/revision/latest/smart/width/250/height/250?cb=20210214190655&path-prefix=ru') no-repeat center/cover;
+}
+.cards__card_2 {
+  background: url('https://www.meme-arsenal.com/memes/822ed40fc5280aa909d6cc5577201b0c.jpg') no-repeat center/cover;
+}
+.cards__card_3 {
+  background: url('https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi.png/revision/latest/smart/width/250/height/250?cb=20210225204731&path-prefix=ru') no-repeat center/cover;
+}
+.cards__card_4 {
+  background: url('https://sun9-86.userapi.com/impg/GsHdZBgZjaAEnuRcP4rMocbQtFp-7oHWHo7Z-A/dAfieSacoF4.jpg?size=604x451&quality=96&sign=7f3fa704db96ab81836338dc062708ba&type=album') no-repeat center/cover;
+}
+.cards__card_5 {
+  background: url('https://actkino.ru/wp-content/uploads/2020/09/top-10-samyh-ljubimyh-personazhej-iz-anime-naruto-d107d21.png') no-repeat center/cover;
+}
+.cards__card_6 {
+  background: url('https://storage.yvision.kz/images/user/madinatty/5JmtdkL20VpZ3vRfWq5pEEaA3eNb3w.png') no-repeat center/cover;
+}
+.cards__card_7 {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Bl7KeDUagz9adLXp2mkn4BpB034Z1pS8AQ&usqp=CAU') no-repeat center/cover;
+}
+.cards__card_8 {
+  background: url('https://cs7.pikabu.ru/post_img/big/2017/11/29/8/1511963027155414387.jpg') no-repeat center/cover;
+}
+/* CARDS */
